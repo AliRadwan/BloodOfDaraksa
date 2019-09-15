@@ -27,6 +27,7 @@
             android:gravity="center_vertical">
 
 
+
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_weight="5"
@@ -38,8 +39,8 @@
                     android:id="@+id/tv_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/profile"
-                    tools:text="ali radwan"
+                    android:drawableRight="@drawable/profile"
+                    tools:text="علي محمد علي محمد رضوان "
                     android:fontFamily="sans-serif-condensed"
                     android:textSize="20sp"
                     android:textColor="@color/colorAccent"/>
@@ -48,13 +49,12 @@
                     android:id="@+id/tv_address"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/location"
-                    tools:text="elgazar"
+                    android:drawableRight="@drawable/location"
+                    tools:text="شارع الجزار "
                     android:textSize="16sp"
                     android:textColor="@color/colorAccent"/>
 
             </LinearLayout>
-
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -70,8 +70,6 @@
                     android:src="@drawable/call"
                     android:background="?selectableItemBackgroundBorderless" />
             </LinearLayout>
-
-
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
