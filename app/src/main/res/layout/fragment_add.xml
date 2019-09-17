@@ -16,14 +16,33 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="address"
-        android:id="@+id/edt_user_address" />
+        android:hint="Blood Type"
+        android:id="@+id/edt_blood_type"/>
+
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Blood Type"
-        android:id="@+id/edt_blood_type"/>
+        android:hint="phone"
+        android:inputType="phone"
+        android:id="@+id/edt_user_phone" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="address"
+        android:id="@+id/edt_user_address" />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="age"
+        android:id="@+id/edt_user_age" />
+
+
+
 
     <Button
         android:layout_width="match_parent"

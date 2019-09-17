@@ -13,11 +13,18 @@ public class UserEntity {
     private int userId;
     @ColumnInfo(name = "blood_type")
     private String bloodType;
+    @ColumnInfo(name = "name")
     private String userName;
     // we make age Int because we want to make it the priority of people
+    @ColumnInfo(name = "age")
     private int userAge;
+    @ColumnInfo(name = "address")
     private String userAddress;
+    @ColumnInfo(name = "phone")
     private String userPhone;
+
+
+
 
 
 

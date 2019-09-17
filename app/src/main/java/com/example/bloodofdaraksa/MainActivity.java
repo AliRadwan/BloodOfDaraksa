@@ -5,6 +5,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.room.Room;
 
 import android.os.Bundle;
+import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,8 +17,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         fragmentManager = getSupportFragmentManager();
 
-        bloodDB = Room.databaseBuilder(getApplicationContext(),BloodDB.class,"userDB").allowMainThreadQueries().build();
+        bloodDB = Room.databaseBuilder(getApplicationContext(),BloodDB.class,"usersblood.db").allowMainThreadQueries().build();
 
+        Log.e("users",bloodDB.myDao().getUsers().size()+"");
         if (findViewById(R.id.fragment_container) != null){
             if (savedInstanceState != null){
                 return;

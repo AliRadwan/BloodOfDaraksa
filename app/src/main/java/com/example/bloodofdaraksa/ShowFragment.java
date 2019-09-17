@@ -61,7 +61,8 @@ public class ShowFragment extends Fragment {
             data = MainActivity.bloodDB.myDao().getUsersBlood("A-");
             adapter = new ShowDataAdapter(data, getContext());
             recyclerView.setAdapter(adapter);
-        } else if (HomeFragment.fragName == "B+") {
+        }
+        else if (HomeFragment.fragName == "B+") {
             data = MainActivity.bloodDB.myDao().getUsersBlood("B+");
             adapter = new ShowDataAdapter(data, getContext());
             recyclerView.setAdapter(adapter);
