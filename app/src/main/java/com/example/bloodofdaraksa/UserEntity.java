@@ -2,6 +2,7 @@ package com.example.bloodofdaraksa;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = "users")
@@ -11,22 +12,39 @@ public class UserEntity {
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "user_id")
     private int userId;
-    @ColumnInfo(name = "blood_type")
-    private String bloodType;
     @ColumnInfo(name = "name")
     private String userName;
+    @ColumnInfo(name = "blood_type")
+    private String bloodType;
     // we make age Int because we want to make it the priority of people
     @ColumnInfo(name = "age")
-    private int userAge;
+    private String userAge;
     @ColumnInfo(name = "address")
     private String userAddress;
     @ColumnInfo(name = "phone")
     private String userPhone;
 
+//    @Ignore
+//    public UserEntity() {
+//    }
 
+//    @Ignore
+//    public UserEntity(int userId, String userName, String bloodType, String  userAge, String userAddress, String userPhone) {
+//        this.userId = userId;
+//        this.userName = userName;
+//        this.bloodType = bloodType;
+//        this.userAge = userAge;
+//        this.userAddress = userAddress;
+//        this.userPhone = userPhone;
+//    }
 
-
-
+    public UserEntity(String userName, String bloodType, String  userAge, String userAddress, String userPhone) {
+        this.userName = userName;
+        this.bloodType = bloodType;
+        this.userAge = userAge;
+        this.userAddress = userAddress;
+        this.userPhone = userPhone;
+    }
 
     public int getUserId() {
         return userId;
@@ -52,11 +70,11 @@ public class UserEntity {
         this.userName = userName;
     }
 
-    public int getUserAge() {
+    public String getUserAge() {
         return userAge;
     }
 
-    public void setUserAge(int userAge) {
+    public void setUserAge(String userAge) {
         this.userAge = userAge;
     }
 

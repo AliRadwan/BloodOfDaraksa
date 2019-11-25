@@ -37,9 +37,9 @@ public class DeleteFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 int id = Integer.parseInt(editTextId.getText().toString());
-                UserEntity userEntity = new UserEntity();
-                userEntity.setUserId(id);
-                MainActivity.bloodDB.myDao().deleteUser(userEntity);
+//                UserEntity userEntity = new UserEntity();
+//                userEntity.setUserId(id);
+//                MainActivity.bloodDB.myDao().deleteUser(userEntity);
 
                 Toast.makeText(getActivity(), "delete user", Toast.LENGTH_SHORT).show();
                 editTextId.setText("");

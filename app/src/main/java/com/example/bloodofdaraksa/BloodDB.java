@@ -6,8 +6,8 @@ import androidx.room.RoomDatabase;
 /**
  * Created by Ali Radwan on 9/12/2019.
  */
-@Database(entities = {UserEntity.class},version = 1,exportSchema = false)
+@Database(entities = {UserEntity.class},version = 2,exportSchema = false)
 public abstract class BloodDB extends RoomDatabase {
 
-    public abstract MyDao myDao();
+    public abstract BloodDao myDao();
 }

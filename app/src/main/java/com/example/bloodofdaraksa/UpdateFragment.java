@@ -45,12 +45,12 @@ public class UpdateFragment extends Fragment {
                 String address = editTextAdddress.getText().toString();
                 String blood = editTextBlood.getText().toString();
 
-                UserEntity userEntity = new UserEntity();
-                userEntity.setUserName(name);
-                userEntity.setUserAddress(address);
-                userEntity.setBloodType(blood);
+//                UserEntity userEntity = new UserEntity();
+//                userEntity.setUserName(name);
+//                userEntity.setUserAddress(address);
+//                userEntity.setBloodType(blood);
 
-                MainActivity.bloodDB.myDao().updateUser(userEntity);
+//                MainActivity.bloodDB.myDao().updateUser(userEntity);
                 Toast.makeText(getActivity(), "update", Toast.LENGTH_SHORT).show();
 
                 editTextName.setText("");

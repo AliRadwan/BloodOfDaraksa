@@ -43,12 +43,12 @@ public class AddFragment extends Fragment {
                 String blood = bloodType.getText().toString();
 
 
-                UserEntity userEntity = new UserEntity();
-                userEntity.setUserName(name);
-                userEntity.setUserAddress(address);
-                userEntity.setBloodType(blood);
-
-                MainActivity.bloodDB.myDao().addUser(userEntity);
+////                UserEntity userEntity = new UserEntity(userName.getText(),bloodType.getText(),);
+//                userEntity.setUserName(name);
+//                userEntity.setUserAddress(address);
+//                userEntity.setBloodType(blood);
+//
+//                MainActivity.bloodDB.myDao().insert(userEntity);
                 Toast.makeText(getActivity(), "Done", Toast.LENGTH_SHORT).show();
 
                 userName.setText("");

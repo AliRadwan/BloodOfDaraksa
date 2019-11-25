@@ -12,10 +12,10 @@ import java.util.List;
  * Created by Ali Radwan on 9/12/2019.
  */
 @Dao
-public interface MyDao {
+public interface BloodDao {
 
     @Insert
-    public void addUser(UserEntity user);
+    public void insert(UserEntity user);
 
     @Query("select * from users")
     public List<UserEntity> getUsers();
